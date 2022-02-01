@@ -1,4 +1,7 @@
 -------------------------------------------
+这个Readme是配置开发环境的时候的readme被自动识别的一会得改
+-------------------------------------------
+-------------------------------------------
 Source installation information for modders
 -------------------------------------------
 This code follows the Minecraft Forge installation methodology. It will apply
