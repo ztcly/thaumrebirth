@@ -1,0 +1,17 @@
+[
+{
+  "modid": "thaumrebirth",
+  "name": "ThaumRebirth",
+  "description": "thaumrebirth(mcmod.info in resources)",
+  "version": "1.0.0",
+  "mcversion": "1.12",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ztcly"],
+  "credits": "= =",
+  "logoFile": "",
+  "screenshots": [],
+  "requiredMods":["baubles","thaumcraft"]
+  "dependencies":["baubles","thaumcraft"]
+}
+]

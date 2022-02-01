@@ -1,0 +1,5 @@
+itemGroup.thaumrebirth=ThaumRebirth
+item.itemwarpwardamulet.name=Warp Ward Amulet
+itemwarpwardamulet=Warp Ward AmuletNOp
+warpwardamulet.amulet.noeffect=NoEffect
+warpwardamulet.amulet.noeffect.name=NoEffectName
