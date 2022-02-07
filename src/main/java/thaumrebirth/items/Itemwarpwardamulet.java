@@ -6,18 +6,17 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionEffect;
 import thaumcraft.common.lib.potions.PotionWarpWard;
-import thaumrebirth.creativetab.Thaumrebirthtab;
 
 import java.util.Collection;
 
 public class Itemwarpwardamulet extends Item implements IBauble{
     public static PotionWarpWard potionWarpWard;
 
-    public  Itemwarpwardamulet(){
-                this.setCreativeTab(Thaumrebirthtab.thaumTab);
-                this.setUnlocalizedName("itemwarpwardamulet");
+    public Itemwarpwardamulet(){
+                //this.setCreativeTab(Thaumrebirthtab.thaumTab);
+                //this.setUnlocalizedName("itemwarpwardamulet");
                 this.setMaxStackSize(1);
-                this.setRegistryName("warp_ward_amulet");
+                //this.setRegistryName("warp_ward_amulet");
 
     }
 
@@ -44,4 +43,6 @@ public class Itemwarpwardamulet extends Item implements IBauble{
             player.addPotionEffect(new PotionEffect(PotionWarpWard.instance, 200, 0));
         }
     }
+
+
 }

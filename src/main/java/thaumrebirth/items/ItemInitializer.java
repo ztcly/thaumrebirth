@@ -1,8 +1,6 @@
 package thaumrebirth.items;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
@@ -14,6 +12,11 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.registries.IForgeRegistry;
+import thaumcraft.api.aspects.Aspect;
+import thaumcraft.api.aspects.AspectList;
+import thaumcraft.api.aspects.AspectRegistryEvent;
+import thaumrebirth.api.TRBItems;
+import thaumrebirth.creativetab.Thaumrebirthtab;
 
 
 @Mod.EventBusSubscriber(modid = "thaumrebirth")
@@ -35,10 +38,31 @@ public class ItemInitializer {
         item.setRegistryName(item.getBlock().getRegistryName());
         return item;
     }
+
+    /**
+    * @Param: [item, name]
+    * @Author: ztcly
+    * @Date: 2022/2/7
+    * @Description: a method to set CreativeTab,RegistryName and UnlocalizedName
+    */
+    private static Item setupItem(Item item,String name){
+        return item.setCreativeTab(Thaumrebirthtab.thaumTab).setRegistryName(name).setUnlocalizedName(name);
+    }
+
     @SubscribeEvent
     public static void onRegistry(RegistryEvent.Register<Item> event) {
         IForgeRegistry<Item> registry = event.getRegistry();
-        registry.register(ITEMWARPWARDAMULET);
+        registry.register(setupItem(ITEMWARPWARDAMULET,"warp_ward_amulet"));
+    }
+
+    /**
+    * @Author: ztcly
+    * @Date: 2022/2/7
+    * @Description: Used to assign apsects to the given item
+    */
+    @SubscribeEvent
+    public static void aspectReg(AspectRegistryEvent event){
+        event.register.registerObjectTag(new ItemStack(TRBItems.warp_ward_amulet), (new AspectList()).add(Aspect.PROTECT, 10).add(Aspect.ORDER, 10).add(Aspect.CRYSTAL,10));
     }
 
     @SubscribeEvent
