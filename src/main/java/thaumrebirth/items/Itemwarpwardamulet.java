@@ -6,11 +6,23 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionEffect;
 import thaumcraft.common.lib.potions.PotionWarpWard;
+import thaumrebirth.creativetab.Thaumrebirthtab;
 
 import java.util.Collection;
 
 public class Itemwarpwardamulet extends Item implements IBauble{
     public static PotionWarpWard potionWarpWard;
+
+    public  Itemwarpwardamulet(){
+                this.setCreativeTab(Thaumrebirthtab.thaumTab);
+                this.setUnlocalizedName("itemwarpwardamulet");
+                this.setMaxStackSize(1);
+                this.setRegistryName("warp_ward_amulet");
+
+    }
+
+
+
     @Override
     public BaubleType getBaubleType(ItemStack itemStack) {
         return BaubleType.AMULET;

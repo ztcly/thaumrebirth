@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "thaumrebirth:items/itemwarpwardamulet"
+        "layer0": "thaumrebirth:items/warp_ward_amulet"
     }
 }
