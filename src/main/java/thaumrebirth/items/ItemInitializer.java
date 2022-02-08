@@ -16,6 +16,7 @@ import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
 import thaumcraft.api.aspects.AspectRegistryEvent;
 import thaumrebirth.api.TRBItems;
+import thaumrebirth.aspect.TRBAspects;
 import thaumrebirth.creativetab.Thaumrebirthtab;
 
 
@@ -62,7 +63,7 @@ public class ItemInitializer {
     */
     @SubscribeEvent
     public static void aspectReg(AspectRegistryEvent event){
-        event.register.registerObjectTag(new ItemStack(TRBItems.warp_ward_amulet), (new AspectList()).add(Aspect.PROTECT, 10).add(Aspect.ORDER, 10).add(Aspect.CRYSTAL,10));
+        event.register.registerObjectTag(new ItemStack(TRBItems.warp_ward_amulet), (new AspectList()).add(Aspect.PROTECT, 10).add(Aspect.ORDER, 10).add(Aspect.CRYSTAL,10).add(TRBAspects.GATHER,1));
     }
 
     @SubscribeEvent
