@@ -1,0 +1,31 @@
+{
+  "entries": [
+    {
+      "key": "THAUMREBIRTHBASE",
+      "name": "thaumrebirth.research.thaumrebirthbase.title",
+      "icons": [
+        "thaumcraft:textures/research/cat_infusion.png"
+      ],
+      "category": "THAUMREBIRTH",
+      "parents": [
+        "~FIRSTSTEPS"
+      ],
+      "siblings": [
+        "~FIRSTSTEPS"
+      ],
+      "meta": [
+        "ROUND",
+        "HIDDEN"
+      ],
+      "location": [
+        0,
+        0
+      ],
+      "stages": [
+        {
+          "text": "thaumrebirth.research.thaumrebirthbase.0"
+        }
+      ]
+    }
+  ]
+}
