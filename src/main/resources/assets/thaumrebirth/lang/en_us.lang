@@ -1,6 +1,6 @@
 itemGroup.thaumrebirth=ThaumRebirth
-item.itemwarpwardamulet.name=Warp Ward Amulet?
-itemwarpwardamulet=Warp Ward AmuletNOp
-warpwardamulet.amulet.noeffect=NoEffect
-warpwardamulet.amulet.noeffect.name=NoEffectName
+
 item.warp_ward_amulet.name=Warp Warp Ward Amulet
+
+thaumrebirth.research.thaumrebirthbase.title=ThaumRebirth:basic
+thaumrebirth.research.thaumrebirthbase.0=HelloWorld!

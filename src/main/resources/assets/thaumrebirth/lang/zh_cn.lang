@@ -1,7 +1,6 @@
-
 itemGroup.thaumrebirth=神秘重生
-item.itemwarpwardamulet.name=扭曲守护项链
-itemwarpwardamulet=Warp Ward AmuletNOp
-warpwardamulet.amulet.noeffect=NoEffect
-warpwardamulet.amulet.noeffect.name=NoEffectName
+
 item.warp_ward_amulet.name=扭曲守护项链
+
+thaumrebirth.research.thaumrebirthbase.title=神秘重生:基础
+thaumrebirth.research.thaumrebirthbase.0=欢迎来到神秘重生的世界。
