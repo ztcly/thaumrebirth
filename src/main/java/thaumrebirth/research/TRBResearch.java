@@ -33,6 +33,7 @@ public class TRBResearch {
          *创建新的研究，使用ThaumcraftApi.registerResearchLocation注册，getResearchJSON定位json文件位置
          */
         ThaumcraftApi.registerResearchLocation(getResearchJSON("base"));
+        ThaumcraftApi.registerResearchLocation(getResearchJSON("warpwardamulet"));
     }
 
 

@@ -2,5 +2,9 @@ itemGroup.thaumrebirth=神秘重生
 
 item.warp_ward_amulet.name=扭曲守护项链
 
+tc.research_category.THAUMREBIRTH = 神秘重生
 thaumrebirth.research.thaumrebirthbase.title=神秘重生:基础
 thaumrebirth.research.thaumrebirthbase.0=欢迎来到神秘重生的世界。
+thaumrebirth.research.wardwarpamulet.title=扭曲守护项链
+thaumrebirth.research.warpwardamulet.0=净化浴盐与祛邪肥皂所带来的扭曲守护效果让我能够从烦恼的扭曲中暂时找到令人安宁的间隙。<BR> 但它们的作用时长十分有限并且随着扭曲值的增加而降低，我需要找到一样东西来为我提供长久的防护，尽管这可能十分昂贵。
+thaumrebirth.research.warpwardamulet.1=嗯我把这玩意做出来了

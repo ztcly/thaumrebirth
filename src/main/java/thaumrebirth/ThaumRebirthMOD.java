@@ -5,6 +5,7 @@ import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
+import thaumrebirth.items.InfusionCrafting;
 import thaumrebirth.research.TRBResearch;
 
 @Mod(modid = ThaumRebirthMOD.MODID, name = ThaumRebirthMOD.NAME, version = ThaumRebirthMOD.VERSION,dependencies = ThaumRebirthMOD.DEPENDENCIES)
@@ -29,6 +30,7 @@ public class ThaumRebirthMOD
     public void init(FMLInitializationEvent event)
     {
         TRBResearch.initResearch();
+        InfusionCrafting.initInfusionCrafting();
 
     }
 }

@@ -1,0 +1,38 @@
+{
+  "entries": [
+    {
+      "key": "WARPWARDAMULET",
+      "name": "thaumrebirth.research.wardwarpamulet.title",
+      "icons": [
+        "thaumrebirth:textures/items/warp_ward_amulet.png"
+      ],
+      "category": "THAUMREBIRTH",
+      "parents": [
+        "THAUMREBIRTHBASE",
+        "SANESOAP"
+      ],
+      "siblings": [
+      ],
+      "meta": [
+        "ROUND",
+        "HIDDEN"
+      ],
+      "location": [
+        0,
+        1
+      ],
+      "stages": [
+        {
+          "text": "thaumrebirth.research.warpwardamulet.0",
+          "required_knowledge":["OBSERVATION;ELDRITCH;1","THEORY;ALCHEMY;1"],
+          "required_item": ["thaumcraft:baubles;1;0","thaumcraft:sanity_soap;1;0","thaumcraft:bath_salts;1;0"]
+        },
+        {
+          "text": "thaumrebirth.research.warpwardamulet.1",
+          "recipes": ["thaumrebirth:warp_ward_amulet"]
+        }
+
+      ]
+    }
+  ]
+}
