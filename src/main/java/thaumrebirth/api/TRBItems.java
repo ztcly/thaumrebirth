@@ -2,6 +2,7 @@ package thaumrebirth.api;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import thaumrebirth.items.Itemwarpwardamulet;
 
 /**
  * @author ztcly
@@ -10,5 +11,6 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
  **/
 @GameRegistry.ObjectHolder("thaumrebirth")
 public class TRBItems {
-    public static final Item warp_ward_amulet=null;
+    ///物品////////////////////
+    public static final Item warp_ward_amulet=new Itemwarpwardamulet();
 }

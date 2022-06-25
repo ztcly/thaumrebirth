@@ -13,7 +13,7 @@ public class Itemwarpwardamulet extends Item implements IBauble{
     public static PotionWarpWard potionWarpWard;
 
     public Itemwarpwardamulet(){
-                //this.setCreativeTab(Thaumrebirthtab.thaumTab);
+                //this.setCreativeTab(TRBCreativeTab.thaumTab);
                 //this.setUnlocalizedName("itemwarpwardamulet");
                 this.setMaxStackSize(1);
                 //this.setRegistryName("warp_ward_amulet");

@@ -17,11 +17,11 @@ import thaumcraft.api.aspects.AspectList;
 import thaumcraft.api.aspects.AspectRegistryEvent;
 import thaumrebirth.api.TRBItems;
 import thaumrebirth.aspect.TRBAspects;
-import thaumrebirth.creativetab.Thaumrebirthtab;
+import thaumrebirth.creativetab.TRBCreativeTab;
 
 
 @Mod.EventBusSubscriber(modid = "thaumrebirth")
-public class ItemInitializer {
+public class TRBItemInitializer {
     public static final Itemwarpwardamulet ITEMWARPWARDAMULET =new Itemwarpwardamulet();    //here to announce the implements of itemclass
 
 
@@ -47,7 +47,7 @@ public class ItemInitializer {
     * @Description: a method to set CreativeTab,RegistryName and UnlocalizedName
     */
     private static Item setupItem(Item item,String name){
-        return item.setCreativeTab(Thaumrebirthtab.thaumTab).setRegistryName(name).setUnlocalizedName(name);
+        return item.setCreativeTab(TRBCreativeTab.thaumTab).setRegistryName(name).setUnlocalizedName(name);
     }
 
     @SubscribeEvent
@@ -59,13 +59,19 @@ public class ItemInitializer {
     /**
     * @Author: ztcly
     * @Date: 2022/2/7
-    * @Description: Used to assign apsects to the given item
+    * @Description: 给物品设定要素
     */
     @SubscribeEvent
     public static void aspectReg(AspectRegistryEvent event){
         event.register.registerObjectTag(new ItemStack(TRBItems.warp_ward_amulet), (new AspectList()).add(Aspect.PROTECT, 10).add(Aspect.ORDER, 10).add(Aspect.CRYSTAL,10).add(TRBAspects.GATHER,1));
     }
-
+    /**
+    * @Param [event],[net.minecraftforge.client.event.ModelRegistryEvent]
+    * @Author ztcly
+    * @Date 2022/6/25
+    * @Description 为物品设置模型
+     * SIDEONLY
+    */
     @SubscribeEvent
     @SideOnly(Side.CLIENT)
     public static void onModelRegistry(ModelRegistryEvent event)

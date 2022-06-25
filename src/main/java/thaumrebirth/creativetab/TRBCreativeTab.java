@@ -5,10 +5,10 @@ import net.minecraft.item.ItemStack;
 import thaumrebirth.ThaumRebirthMOD;
 import thaumrebirth.api.TRBItems;
 
-public class Thaumrebirthtab extends CreativeTabs {
-    public static final Thaumrebirthtab thaumTab = new Thaumrebirthtab();
+public class TRBCreativeTab extends CreativeTabs {
+    public static final TRBCreativeTab thaumTab = new TRBCreativeTab();
 
-    public Thaumrebirthtab(){
+    public TRBCreativeTab(){
         super(ThaumRebirthMOD.MODID);
     }
     @Override
