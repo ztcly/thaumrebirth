@@ -2,7 +2,6 @@ package thaumrebirth.api;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-import thaumrebirth.items.Itemwarpwardamulet;
 
 /**
  * @author ztcly
@@ -12,5 +11,15 @@ import thaumrebirth.items.Itemwarpwardamulet;
 @GameRegistry.ObjectHolder("thaumrebirth")
 public class TRBItems {
     ///物品////////////////////
-    public static final Item warp_ward_amulet=new Itemwarpwardamulet();
+    //注意：这里所有的Item需要是final 后面你写个null都行 TODO 0628:待确认，好像不是这么回事
+    public static Item warpWardAmulet;
+    public static Item ingotOrderMetal;
+    public static Item ingotChaosMetal;
+    public static Item ordermetalHelmet;
+    public static Item ordermetalChestplate;
+    public static Item ordermetalLeggings;
+    public static Item ordermetalBoots;
+
+
+
 }
