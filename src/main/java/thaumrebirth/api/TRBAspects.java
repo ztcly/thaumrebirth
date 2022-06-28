@@ -1,4 +1,4 @@
-package thaumrebirth.aspect;
+package thaumrebirth.api;
 
 import net.minecraft.util.ResourceLocation;
 import thaumcraft.api.aspects.Aspect;

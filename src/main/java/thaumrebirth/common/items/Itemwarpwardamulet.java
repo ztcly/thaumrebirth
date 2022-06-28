@@ -1,4 +1,4 @@
-package thaumrebirth.items;
+package thaumrebirth.common.items;
 import baubles.api.BaubleType;
 import baubles.api.IBauble;
 import net.minecraft.entity.EntityLivingBase;

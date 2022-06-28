@@ -1,4 +1,4 @@
-package thaumrebirth.crafting;
+package thaumrebirth.common.crafting;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
@@ -32,8 +32,8 @@ public class TRBInfusionCrafting {
 
         ///注魔//////////////////
         ThaumcraftApi.addInfusionCraftingRecipe(getItemName("warp_ward_amulet"),
-                new InfusionRecipe("WARPWARDAMULET",new ItemStack(TRBItems.warp_ward_amulet),4,
-                        new AspectList().add(Aspect.METAL, 35).add(Aspect.PROTECT, 35).add(Aspect.ENERGY, 25).add(Aspect.ORDER,50),new ItemStack(ItemsTC.baubles, 1, 0),new Object[]{new ItemStack(ItemsTC.amber),new ItemStack(ItemsTC.brain)}));
+                new InfusionRecipe("WARPWARDAMULET",new ItemStack(TRBItems.warpWardAmulet),4,
+                        new AspectList().add(Aspect.METAL, 35).add(Aspect.PROTECT, 35).add(Aspect.ENERGY, 25).add(Aspect.ORDER,50),new ItemStack(ItemsTC.baubles, 1, 0),new Object[]{new ItemStack(ItemsTC.amber),new ItemStack(ItemsTC.brain),new ItemStack(TRBItems.ingotOrderMetal)}));
         logger.info("InfusionCraftingRecipe:"+getItemName("warp_ward_amulet"));
 
         logger.info("End InitInfusionCrafting");

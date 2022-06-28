@@ -1,4 +1,4 @@
-package thaumrebirth.research;
+package thaumrebirth.common.research;
 
 import net.minecraft.util.ResourceLocation;
 import thaumcraft.api.ThaumcraftApi;

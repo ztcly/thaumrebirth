@@ -1,4 +1,4 @@
-package thaumrebirth.creativetab;
+package thaumrebirth.common.creativetab;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
@@ -13,6 +13,6 @@ public class TRBCreativeTab extends CreativeTabs {
     }
     @Override
     public ItemStack getTabIconItem() {
-        return new ItemStack(TRBItems.warp_ward_amulet);
+        return new ItemStack(TRBItems.warpWardAmulet);
     }
 }
